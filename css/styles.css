@@ -215,6 +215,15 @@ ol {
   overflow: hidden;
 }
 
+.benefit-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  width: 264px;
+  background-color: var(--light-color);
+}
+
 .benefits,
 .our-work,
 .team-cards {
@@ -234,7 +243,7 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
-  margin-bottom: 8px;
+  margin: 8px 0;
 }
 
 .benefit-description {
@@ -286,8 +295,27 @@ ol {
   padding: 32px 0;
 }
 
+.socials {
+  display: flex;
+  padding: 0 4px;
+  justify-content: space-around;
+}
+
+.card-info a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-brand-color);
+  text-decoration: none;
+  border-radius: 50%;
+}
+
 .worker-position {
   line-height: 1.5;
+  margin-bottom: 8px;
 }
 
 .buttons {
@@ -348,9 +376,67 @@ ol {
   line-height: 1.5;
 }
 
+.customers-header {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  color: var(--dark-color);
+  margin-bottom: 72px;
+}
+
+.customers-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.customers-icons li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--subtle-text-color);
+  border-radius: 4px;
+}
+
 .footer {
   background-color: var(--dark-color);
   padding: 100px 0;
+}
+
+.footer-socials {
+  margin-left: 120px;
+  width: 208px;
+  height: 80px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.footer > .container {
+  display: flex;
+}
+
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.socials-header {
+  font-weight: 700;
+  color: var(--pure-white);
 }
 
 .logo-footer {
@@ -361,5 +447,8 @@ ol {
 .footer-text {
   color: var(--accent-color);
   width: 264px;
+  height: 72px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin-top: 16px;
 }
